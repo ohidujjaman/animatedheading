@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Headline</title>
+    <link rel="stylesheet" href="css/jquery.animatedheadline.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <span class="toggle-nav" id="toggle-nav">
+            <i class="material-icons">menu</i>
+        </span>
+        <!-- <div class=""> -->
+        <a href="#" class="logo"><img src="logo.png" alt="logo.png">
+            <p>Mithu Wahid</p>
+        </a>
+        <!-- </div> -->
+        <ul class="main-nav" id="main-nav">
+            <li><a href="#" class="nav-links">Home</a></li>
+            <li><a href="#" class="nav-links">Blog</a></li>
+            <li><a href="#" class="nav-links">Conatct Me</a></li>
+            <li><a href="#" class="nav-links">About Me</a></li>
+        </ul>
+    </nav>
+    <div class="container " id="particles-js">
+        <div class="content-area">
+            <h1>Hello Dear</h1>
+            <div class="top-headlin">
+                <h1 class="ah-headline">
+                    <span>I Am </span>
+                    <span class="ah-words-wrapper">
+                        <b class="is-visible">Mithu Wahid</web-Designer></b>
+                        <b>a Wordpress Designer</b>
+                        <b>a Web Devloper</b>
+                        <b>a Freelancer</b>
+                    </span>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script>
+        let mainNav = document.getElementById('main-nav');
+        let toggleNav = document.getElementById('toggle-nav');
+        toggleNav.addEventListener('click', function () {
+            mainNav.classList.toggle('active')
+        });
+    </script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.animatedheadline.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
